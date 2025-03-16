@@ -1,0 +1,61 @@
+/* Estilização específica do portfólio */
+
+/* Personaliza o título da página */
+#page-title {
+    text-align: center;
+    color: #E58E26;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Seção do portfólio */
+.portfolio-content {
+    text-align: center;
+    background-color: #3D434F;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: auto;
+}
+
+/* Grid de projetos */
+.projetos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Cada projeto individual */
+.projeto {
+    background-color: #282C35;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+/* Imagem do projeto */
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Título do projeto */
+.projeto h3 {
+    color: #E58E26;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Texto do projeto */
+.projeto p {
+    font-size: 18px;
+    color: #E0E0E0;
+}
+
