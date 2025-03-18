@@ -134,3 +134,36 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+# Ignorar arquivos do Windows
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+System Volume Information/
+*.bak
+*.swp
+
+# Ignorar arquivos do sistema e configurações locais
+.vscode/
+.gitconfig
+.bash_history
+*.lock
+*.bin
+
+# Ignorar pastas específicas que não fazem parte do projeto
+Documents/
+Downloads/
+Music/
+Videos/
+Pictures/
+OneDrive/
+Praticando/
+Saved Games/
+Searches/
+
+# Ignorar PDFs e arquivos pessoais
+*.pdf
+*.docx
+*.xlsx

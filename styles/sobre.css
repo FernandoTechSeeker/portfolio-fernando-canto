@@ -122,3 +122,8 @@
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
+#main-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza a página */
+    padding: 0 15px; /* Adiciona um pequeno espaçamento para evitar rolagem */
+}

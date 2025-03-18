@@ -1,44 +1,43 @@
-/* Ajuste corpo */
-  
+/* Ajuste geral do corpo da página para garantir um layout flexível e estruturado */
 body {
-    background-color: #282C35; 
-    color: #E0E0E0; 
-    font-family: 'Poppins', sans-serif; 
+    background-color: #282C35; /* Cor de fundo escura para contraste */
+    color: #E0E0E0; /* Cor do texto para melhor legibilidade */
+    font-family: 'Poppins', sans-serif; /* Fonte escolhida para uma boa leitura */
     margin: 0;
     padding: 0; 
-    display: flex; /* Flexbox para alinhar o conteúdo */
-    flex-direction: column; /* Alinhamento vertical */
-    min-height: 100vh;
+    display: flex; /* Uso de Flexbox para alinhamento */
+    flex-direction: column; /* Mantém o conteúdo alinhado verticalmente */
+    min-height: 100vh; /* Garante que o conteúdo ocupe a altura total da tela */
 }
 
 /* HEADER (Cabeçalho) */
 header {
-    background-color: #1F2229; 
+    background-color: #1F2229; /* Fundo do cabeçalho */
     padding: 15px 30px;
-    display: flex; /* Flexbox para alinhar os elementos */
-    justify-content: space-between; /* Alinhamento horizontal */
-    align-items: center; /* Alinhamento vertical */
+    display: flex; /* Organizando os elementos horizontalmente */
+    justify-content: space-between; /* Mantém o título e menu afastados */
+    align-items: center; /* Centraliza os elementos verticalmente */
 }
 
 /* TÍTULO NO HEADER */
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 28px; /* Tamanho fonte */
-    color: #E58E26; 
+    font-size: 28px; /* Define um tamanho de fonte adequado */
+    color: #E58E26; /* Mantém a cor laranja para destaque */
 }
 
-/* NAVBAR */
+/* NAVBAR - Menu de navegação */
 nav {
-    flex-grow: 1; /* Cresce para ocupar o espaço restante */
-    display: flex; /* Flexbox para alinhar os elementos */
-    justify-content: flex-end; /* Alinhamento horizontal */
+    flex-grow: 1; /* Ocupa o espaço disponível sem desalinhamentos */
+    display: flex;
+    justify-content: flex-end; /* Mantém os links alinhados à direita */
 }
 
 nav ul {
-    list-style: none; 
-    padding: 0; 
-    display: flex; 
-    gap: 20px; 
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens do menu */
 }
 
 nav ul li {
@@ -46,40 +45,41 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E58E26; 
-    text-decoration: none; 
-    font-weight: bold; 
+    color: #E58E26; /* Mantém o destaque dos links */
+    text-decoration: none;
+    font-weight: bold;
     font-size: 18px;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease; /* Adicionando um efeito suave na mudança de cor */
 }
 
+/* Hover no menu para melhor experiência do usuário */
 nav ul li a:hover {
-    color: #76ABAE;  
+    color: #76ABAE; /* Alteração da cor ao passar o mouse */
 }
 
 /* MAIN (Conteúdo Principal) */
 main {
     flex: 1;
-    text-align: center; 
+    text-align: center; /* Centraliza o conteúdo principal */
     padding: 50px;
-    background-color: #323740; 
+    background-color: #323740; /* Fundo para destacar o conteúdo */
     border-radius: 10px;
-    margin: 10px auto;
+    margin: 20px auto;
     width: 80%;
-    
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* Leve sombra para destacar a seção */
 }
 
 /* SEÇÃO DE CONTEÚDO */
 section {
-    background-color: #3D434F; 
-    padding: 10px;
-    border-radius: 80px;
+    background-color: #3D434F; /* Mantendo contraste entre seções */
+    padding: 20px;
+    border-radius: 8px;
     margin: 20px 0;
 }
 
 /* TÍTULOS */
 h1, h2 {
-    color: #E58E26; 
+    color: #E58E26; /* Mantendo a cor laranja nos títulos */
 }
 
 /* FOOTER (Rodapé) */
@@ -92,14 +92,15 @@ footer {
     position: relative;
     bottom: 0;
 }
+
 /* LINKS */
 a {
     text-decoration: none;
     color: #E58E26;
 }
 
+/* Mudança de cor ao passar o mouse */
 a:hover {
- 
     color: #282C35;
 }
 
@@ -119,7 +120,7 @@ a:visited {
     border-radius: 8px;
     margin-top: 20px;
     transition: background 0.3s ease-in-out, transform 0.2s;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adicionando profundidade */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para efeito de elevação */
 }
 
 /* Estilização do botão de voltar */
@@ -134,32 +135,118 @@ a:visited {
     border-radius: 8px;
     margin-top: 20px;
     transition: background 0.3s ease-in-out, transform 0.2s;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adicionando profundidade */
-    
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
 }
 
-/* Efeito hover no botão */
-.btn-navegacao:hover {
-    background-color: #FF9F1C; /* Cor laranja no hover */
-    color: #1F2229; /* Cor da fonte escura */
-    transform: scale(1.05); /* Pequeno aumento para efeito visual */
+/* Efeito hover nos botões */
+.btn-navegacao:hover, .btn-voltar:hover {
+    background-color: #FF9F1C; /* Destacando o botão ao passar o mouse */
+    color: #1F2229; /* Mantendo legibilidade */
+    transform: scale(1.05); /* Leve aumento para efeito visual */
 }
-
-/* Efeito hover no botão de voltar */
-.btn-voltar:hover {
-    background-color: #FF9F1C; /* Cor laranja no hover */
-    color: #1F2229; /* Cor da fonte escura */
-    transform: scale(1.05); /* Pequeno aumento para efeito visual */
-}
-
 
 /* Personaliza o texto */
 #texto {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: #E0E0E0;
     margin: 20px 0;
 }
 
+/* MENU RESPONSIVO */
+/* Estilização do botão do menu para mobile */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #E58E26;
+    font-size: 28px;
+    cursor: pointer;
+    display: none; /* Oculta o botão no desktop */
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
 
+/* Esconde o menu por padrão */
+#nav-menu {
+    display: flex; /* Mantém o menu visível no desktop */
+}
 
+/* Responsividade: Exibir o botão do menu e ajustar o layout em telas menores */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Exibe o botão no mobile */
+    }
+
+    /* Esconde o menu e o exibe apenas quando ativado */
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1F2229;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    /* Quando ativado pelo JavaScript, o menu aparece */
+    #nav-menu.active {
+        display: flex;
+    }
+    
+}
+/* Impede a rolagem lateral */
+html, body {
+    overflow-x: hidden; /* Esconde a rolagem horizontal */
+    width: 100vw; /* Garante que o corpo ocupe toda a largura da tela */
+}
+
+/* Garante que os elementos não ultrapassem a largura da tela */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Ajuste do menu para não criar rolagem horizontal */
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Centraliza os botões */
+    .btn-navegacao {
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Ajusta o main para ocupar melhor a tela */
+    main {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Ajusta o footer para não ter espaçamentos estranhos */
+    footer {
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+    }
+}
