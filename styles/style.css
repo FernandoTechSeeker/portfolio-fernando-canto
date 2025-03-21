@@ -319,3 +319,52 @@ main {
         margin: 0 auto; /* Centraliza */
     }
 }
+
+/* Ajuste no menu */
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E58E26;
+    font-weight: bold;
+}
+
+/* Ajuste no layout dos projetos */
+.projetos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projeto {
+    width: calc(50% - 20px); /* Ajuste para dois por linha */
+    min-width: 300px; /* Evita ficar muito pequeno */
+    background-color: #3D434F;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .projeto {
+        width: 100%; /* Fica um embaixo do outro */
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
