@@ -299,3 +299,23 @@ main {
     margin: 40px 0;
     color: #E0E0E0;
 }
+/* Layout de grid para os projetos */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta automaticamente */
+    gap: 20px; /* Espaço entre os projetos */
+    justify-content: center;
+}
+
+/* Para telas menores (celulares) */
+@media screen and (max-width: 768px) {
+    .projetos-grid {
+        grid-template-columns: 1fr; /* Apenas uma coluna */
+        text-align: center;
+    }
+    
+    .projeto {
+        width: 90%; /* Reduz um pouco a largura para ficar mais harmônico */
+        margin: 0 auto; /* Centraliza */
+    }
+}
