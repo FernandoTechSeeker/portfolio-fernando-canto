@@ -127,3 +127,22 @@
     margin: 0 auto; /* Centraliza a página */
     padding: 0 15px; /* Adiciona um pequeno espaçamento para evitar rolagem */
 }
+.image-gallery img {
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+    border-color: #E58E26; /* Cor laranja suave */
+}.img-medium {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.img-medium.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}

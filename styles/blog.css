@@ -41,3 +41,30 @@
     color: #E0E0E0;
     margin: 20px 0;
 }
+.imagem-blog {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.imagem-blog img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+@keyframes balancar {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.imagem-blog img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    animation: balancar 1.5s ease-in-out infinite alternate;
+}

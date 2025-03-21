@@ -159,11 +159,23 @@ h1, h2 {
 /* FOOTER (Rodapé) */
 /* ========================= */
 
+/* Faz com que a página ocupe toda a altura */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Garante que o conteúdo principal ocupe todo o espaço disponível */
+.container {
+    flex: 1;
+}
+
+/* Faz o rodapé sempre ficar no final */
 footer {
     background-color: #1F2229;
     text-align: center;
     padding: 15px;
-    font-size: 14px;
     width: 100%;
     position: relative;
     bottom: 0;
@@ -241,3 +253,49 @@ main {
     flex: 1; /* Faz com que o conteúdo principal ocupe o máximo de espaço possível */
 }
 
+/* ========================== */
+/* Estilos para o Modo Claro Ajustado */
+/* ========================== */
+
+.light-mode {
+    background-color: #d4b5b5; /* Fundo cinza claro, menos agressivo */
+    color: #1E1E1E; /* Texto escuro, mas suave */
+}
+
+/* Links */
+.light-mode a {
+    color: #D88C00; /* Laranja suave para os links */
+}
+
+/* Cabeçalho */
+.light-mode header {
+    background-color: #8A5757; /* Cinza mais escuro */
+    color: #1E1E1E; /* Texto escuro */
+}
+
+/* Fundo Principal */
+.light-mode main {
+    background-color: #949288; /* Fundo principal mais claro */
+    color: #1E1E1E;
+}
+
+/* Rodapé */
+.light-mode footer {
+    background-color: #8A5757; /* Cinza médio para rodapé */
+    color: #1E1E1E;
+}
+
+/* Seções */
+.light-mode section {
+    background-color: #533D3D; /* Um cinza mais escuro para contraste */
+    color: #1E1E1E; /* Texto escuro para legibilidade */
+    border-radius: 8px;
+}
+
+#home {
+   
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0;
+    color: #E0E0E0;
+}
