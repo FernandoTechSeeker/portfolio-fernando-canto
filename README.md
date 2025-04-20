@@ -1,28 +1,29 @@
-# 🌐 Projeto Portfólio 1
+# 👨🏽‍💻 Portfólio Pessoal – Fernando Canto
 
-Este é um projeto desenvolvido com HTML e CSS como parte do meu processo de aprendizado em desenvolvimento front-end. A proposta é criar uma página visualmente simples, aplicando conceitos básicos de estruturação e estilização de páginas web.
+Este é meu portfólio pessoal desenvolvido com HTML e CSS durante o curso de Front-End. O objetivo é apresentar minha trajetória, meus projetos e meus contatos profissionais de forma clara, responsiva e objetiva.
 
-## 🛠️ Tecnologias utilizadas
+## 🧰 Tecnologias utilizadas
 
 - HTML5
 - CSS3
+- (em breve: JavaScript)
 
-## 💡 Objetivo
+## ✨ Funcionalidades
 
-Praticar:
-- Estruturação de uma página web com HTML
-- Estilização com CSS
-- Responsividade básica e organização visual
+- Página inicial com apresentação pessoal
+- Seção de projetos (linkando diretamente para meu GitHub)
+- Contato e links profissionais (LinkedIn, e-mail)
 
-## 🧠 O que aprendi
+## 🚀 Objetivos do Projeto
 
-- Uso de classes e IDs no CSS
-- Posicionamento de elementos
-- Organização do código em blocos semânticos
+- Praticar e aplicar os conceitos de front-end
+- Criar uma vitrine digital para meu trabalho e evolução
+- Compartilhar minha história de transição de carreira e desenvolvimento
 
-## ✨ Sobre mim
+## 🙋‍♂️ Sobre mim
 
-Sou Fernando, em transição para a área de tecnologia, com foco em front-end, análise de dados e back-end. Esse projeto representa parte da minha prática com interfaces visuais.
+Sou Fernando, em transição para a área de tecnologia, com foco em Análise de Dados, Desenvolvimento Front-End e Back-End. Esse portfólio é mais um passo no meu propósito de unir sensibilidade e tecnologia para criar soluções que façam sentido.
 
 🔗 [LinkedIn](https://www.linkedin.com/in/fernandocanto)  
-📂 [GitHub](https://github.com/FernandoTechSeeker)
+📁 [Meu GitHub](https://github.com/FernandoTechSeeker)
+
