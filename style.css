@@ -90,7 +90,62 @@ ul {
 }
 
 .hero-content {
+  max-width: var(--max-width);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-copy {
   max-width: 850px;
+}
+
+.hero-photo-card {
+  position: relative;
+  justify-self: end;
+  width: min(100%, 340px);
+  padding: 14px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.hero-photo-card::before {
+  content: "";
+  position: absolute;
+  inset: -16px;
+  z-index: -1;
+  border-radius: 40px;
+  background: radial-gradient(circle at 50% 25%, rgba(37, 99, 235, 0.28), transparent 64%);
+}
+
+.hero-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 26px;
+  border: 1px solid var(--border);
+}
+
+.hero-badge {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.86);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-align: center;
+  backdrop-filter: blur(8px);
 }
 
 .eyebrow {
@@ -367,6 +422,15 @@ ul {
 }
 
 @media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo-card {
+    justify-self: start;
+    width: min(100%, 300px);
+  }
+
   .cards-grid,
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -393,6 +457,28 @@ ul {
 
   .hero {
     padding: 72px 0 58px;
+  }
+
+  .hero-grid {
+    gap: 34px;
+  }
+
+  .hero-photo-card {
+    order: -1;
+    justify-self: center;
+    width: min(86vw, 280px);
+    border-radius: 28px;
+  }
+
+  .hero-photo {
+    border-radius: 22px;
+  }
+
+  .hero-badge {
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
+    font-size: 0.76rem;
   }
 
   .section {
